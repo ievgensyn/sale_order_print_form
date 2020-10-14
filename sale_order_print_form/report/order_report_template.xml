@@ -297,8 +297,9 @@
                             <td colspan="5" rowspan="3" style="border-top:0 none white !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td colspan="9" rowspan="11" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
-                                Коментар</td>
+                            <td colspan="9" rowspan="11" style="border-bottom:0 none white !important;vertical-align:top;padding-top:1px !important;word-wrap:break-word;">
+                                <span t-field="doc.note"/>
+                            </td>
                             <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
                                 Джеси</td>
                             <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
