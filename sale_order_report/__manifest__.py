@@ -1,5 +1,5 @@
 {
-    'name': 'Print SO report',
+    'name': 'Print SO form',
 
     'summary': 'Extending Sale functionality',
 
@@ -8,7 +8,7 @@
 
     'category': 'Sales',
     'license': 'Other proprietary',
-    'version': '13.0.1.0.0',
+    'version': '13.0.1.0.1',
 
     'depends': [
         'base', 'sale',
