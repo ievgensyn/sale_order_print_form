@@ -11,11 +11,11 @@
     'version': '13.0.1.0.1',
 
     'depends': [
-        'base', 'sale',
+        'base', 'sale', 'barcodes', 'account',
     ],
     'data': [
         'views/sale_order_view.xml',
-        'report/order_report.xml.xml',
+        'report/order_report.xml',
         'report/order_report_template.xml',
     ],
 
