@@ -49,7 +49,7 @@
                 }
             </style>
 
-            <div class="page">
+            <div class="page" style="page-break-inside: avoid;">
                 <div>
                     <br/>
                     <br/>
@@ -92,8 +92,11 @@
                             </td>
                             <td colspan="6"
                                 style="border-top:0 none white !important;word-wrap:break-word;font-size:16pt;text-align:center !important;">
-                                <span t-field="doc.date_order"
-                                      t-options="{'format': 'dd.mm.YYYY'}"/>
+<!--                                <span t-field="doc.effective_date"/>-->
+                                <t t-if="doc.effective_date">
+                                    <t t-set="date_done" t-value="doc.effective_date + datetime.timedelta(days=+14)"/>
+                                    <span t-esc="date_done.strftime('%d.%m.%Y')"/>
+                                </t>
                             </td>
                         </tr>
                         <tr>
@@ -149,7 +152,7 @@
                             <!--                            <td colspan="6"></td>-->
                             <td colspan="6" rowspan="3"
                                 style="border-top:0 none white !important;">
-                                <span/>
+                                <span/> <!--LOT/SN-->
                             </td>
                             <td colspan="6"
                                 style="border-top:0 none white !important;">
@@ -298,7 +301,11 @@
                         </tr>
                         <tr>
                             <td colspan="9" rowspan="11" style="border-bottom:0 none white !important;vertical-align:top;padding-top:1px !important;word-wrap:break-word;">
-                                <span t-field="doc.note"/>
+                                <t t-foreach="doc.order_line" t-as="line">
+                                    <span t-esc="line_index + 1"/> <span t-field="line.name"/>;
+                                    <br/>
+                                </t>
+
                             </td>
                             <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
                                 Джеси</td>
@@ -354,7 +361,7 @@
                         <tr>
                             <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
                                 Варт.</td>
-                            <td style="vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td style="vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Аванс</td>
                             <td colspan="2"><span/></td> <!-- Currency rate -->
                             <td colspan="7" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
@@ -366,7 +373,12 @@
                             <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:16pt;">
                                 <span t-field="doc.amount_total"/>
                             </td>
-                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:16pt;">9900</td>
+                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:16pt;">
+                                <t t-set="line_amount" t-value="0"/>
+                                <t t-foreach="doc.order_line" t-as="line">
+                                    <span t-esc="line.price_subtotal"/>
+                                </t>
+                            </td>
                             <td colspan="7" rowspan="3" style="border-top:0 none white !important;"><span/></td>
                             <td colspan="6" rowspan="3" style="border-top:0 none white !important;">
                                 <span/>
@@ -384,9 +396,13 @@
                                 Місце призн.</td>
                         </tr>
                         <tr>
-                            <td colspan="9" rowspan="2" style="border-top:0 none white !important;">
-                                <t t-if="doc.partner_id.contact_address">
-                                    <span t-field="doc.partner_id.contact_address"/>
+                            <td colspan="9" rowspan="2"
+                                style="border-top:0 none white !important;">
+                                <t t-if="doc.partner_id.child_ids">
+                                    <t t-set="partner_shipping_address"
+                                       t-value="doc.partner_id.address_get(['delivery'])"/>
+                                    <span t-esc="request.env['res.partner'].browse(partner_shipping_address['delivery']).contact_address"/>
+<!--                                    <span t-field="doc.partner_id.contact_address"/>-->
                                 </t>
                             </td>
                             <td colspan="4" rowspan="4" style="border-top:0 none white !important;"><span/></td>
@@ -404,6 +420,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <p style="page-break-after:always;"/>
             </div>
         </t>
     </template>

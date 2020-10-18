@@ -8,10 +8,10 @@
 
     'category': 'Sales',
     'license': 'Other proprietary',
-    'version': '13.0.1.0.1',
+    'version': '13.0.1.0.2',
 
     'depends': [
-        'base', 'sale', 'barcodes', 'account',
+        'base', 'sale_management', 'barcodes', 'account', 'sale_stock'
     ],
     'data': [
         'views/sale_order_view.xml',
