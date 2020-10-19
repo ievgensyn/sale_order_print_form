@@ -54,19 +54,19 @@
                     <tbody>
                         <tr>
                             <td colspan="2"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Арт.
                             </td>
                             <td colspan="5"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Тип виготовлення
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Отримано:
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Відправити
                             </td>
                         </tr>
@@ -80,12 +80,12 @@
                                 <span/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;align:top !important;text-align:center !important;font-size:16pt;">
+                                style="border-top:0 none white !important;align:top !important;text-align:center !important;font-size:14t;">
                                 <span t-field="doc.date_order"
                                       t-options="{'format': 'dd.mm.YYYY'}"/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;word-wrap:break-word;font-size:16pt;text-align:center !important;">
+                                style="border-top:0 none white !important;word-wrap:break-word;font-size:14t;text-align:center !important;">
 <!--                                <span t-field="doc.effective_date"/>-->
                                 <t t-if="doc.effective_date">
                                     <t t-set="date_done" t-value="doc.effective_date + datetime.timedelta(days=+14)"/>
@@ -95,19 +95,19 @@
                         </tr>
                         <tr>
                             <td colspan="7"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Назва
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 № замовлення від клієнта (з сайта)
                             </td>
                             <td colspan="4"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Майстер
                             </td>
                             <td colspan="2"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Хв.
                             </td>
                         </tr>
@@ -120,7 +120,7 @@
                                 </t>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;word-wrap:break-word;font-size:16pt;text-align:center !important;">
+                                style="border-top:0 none white !important;word-wrap:break-word;font-size:12t;text-align:center !important;">
                                 <span t-field="doc.name"/>
                             </td>
                             <td colspan="4"
@@ -134,11 +134,11 @@
                         </tr>
                         <tr>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Серійний № прикраси
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 <span/>
                             </td>
                         </tr>
@@ -155,11 +155,11 @@
                         </tr>
                         <tr>
                             <td colspan="7"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Метал
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Тип замка (для сер. бр. ланц.)
                             </td>
                         </tr>
@@ -175,19 +175,19 @@
                         </tr>
                         <tr>
                             <td colspan="5"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Покриття
                             </td>
                             <td colspan="2"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Хв.
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Ціль
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Тип прикр.
                             </td>
                         </tr>
@@ -210,15 +210,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Дж
                             </td>
                             <td colspan="12"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Нік
                             </td>
                             <td colspan="6"
-                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                                style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Тел.
                             </td>
                         </tr>
@@ -231,7 +231,7 @@
                                 <span/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;text-align:center !important;font-size:16pt;">
+                                style="border-top:0 none white !important;text-align:center !important;font-size:14t;">
                                 <t t-if="doc.partner_id.phone">
                                     <span t-field="doc.partner_id.phone"/>
                                 </t>
@@ -243,21 +243,21 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="9" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="9" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Опис</td>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 № пакета    шт.</td>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Камінь, ct</td>
                         </tr>
                         <tr>
-                            <td style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Ж</td>
-                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Розм</td>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Шир</td>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Грав</td>
                             <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
                             <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
@@ -269,19 +269,19 @@
                             <td colspan="3" style="border-top:0 none white !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Ч.</td>
-                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Розм.</td>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Шир.</td>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Грав.</td>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Инж.</td>
-                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Хв.</td>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Злото, загот., г</td>
                         </tr>
                         <tr>
@@ -301,9 +301,9 @@
                                 </t>
 
                             </td>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Джеси</td>
-                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Хв</td>
                         </tr>
                         <tr>
@@ -311,11 +311,11 @@
                             <td colspan="2" style="border-top:0 none white !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Руч.мод.</td>
-                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Хв.</td>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Золото, виріб, г</td>
                         </tr>
                         <tr>
@@ -324,13 +324,13 @@
                             <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">3D-Мод.</td>
-                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">3D-Мод.</td>
+                            <td colspan="2" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Хв.</td>
                         </tr>
                         <tr>
                             <td colspan="5" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Срібло, загот., г</td>
                         </tr>
                         <tr>
@@ -341,9 +341,9 @@
                             <td colspan="5" style="border-top:0 none white !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Короб.Шт*варт.</td>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Срібло, виріб, г</td>
                         </tr>
                         <tr>
@@ -353,21 +353,21 @@
                         <tr>
                         </tr>
                         <tr>
-                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Варт.</td>
                             <td style="vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Аванс</td>
                             <td colspan="2"><span/></td> <!-- Currency rate -->
-                            <td colspan="7" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="7" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Доплата</td>
-                            <td colspan="6" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="6" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Знижка</td>
                         </tr>
                         <tr>
-                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:16pt;">
+                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:14t;">
                                 <span t-field="doc.amount_total"/>
                             </td>
-                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:16pt;">
+                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:14t;">
                                 <t t-set="line_amount" t-value="0"/>
                                 <t t-foreach="doc.order_line" t-as="line">
                                     <span t-esc="line.price_subtotal"/>
@@ -384,9 +384,9 @@
                         </tr>
                         <tr>
                             <td colspan="6" rowspan="5" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="9" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="9" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Адреса одержувача</td>
-                            <td colspan="4" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="4" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Місце призн.</td>
                         </tr>
                         <tr>
@@ -404,7 +404,7 @@
                         <tr>
                         </tr>
                         <tr>
-                            <td colspan="9" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.8em;padding-top:1px !important;">
+                            <td colspan="9" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 ПІБ</td>
                         </tr>
                         <tr>
