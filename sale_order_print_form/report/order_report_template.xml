@@ -55,11 +55,11 @@
                         <tr>
                             <td colspan="2"
                                 style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
-                                Арт.
+                                Тип виготовлення
                             </td>
                             <td colspan="5"
                                 style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
-                                Тип виготовлення
+                                Арт.
                             </td>
                             <td colspan="6"
                                 style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
@@ -72,7 +72,7 @@
                         </tr>
                         <tr>
                             <td colspan="2"
-                                style="border-top:0 none white !important;word-wrap:break-word;font-size:14pt;">
+                                style="border-top:0 none white !important;word-wrap:break-word;font-size:12pt;">
                                 <span t-field="doc.name"/>
                             </td>
                             <td colspan="5"
@@ -80,12 +80,12 @@
                                 <span/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;align:top !important;text-align:center !important;font-size:14t;">
+                                style="border-top:0 none white !important;align:top !important;text-align:center !important;font-size:12pt; padding:0px !important;">
                                 <span t-field="doc.date_order"
                                       t-options="{'format': 'dd.mm.YYYY'}"/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;word-wrap:break-word;font-size:14t;text-align:center !important;">
+                                style="border-top:0 none white !important;word-wrap:break-word;font-size:12pt;text-align:center !important;padding:0px !important;">
 <!--                                <span t-field="doc.effective_date"/>-->
                                 <t t-if="doc.effective_date">
                                     <t t-set="date_done" t-value="doc.effective_date + datetime.timedelta(days=+14)"/>
@@ -113,22 +113,22 @@
                         </tr>
                         <tr>
                             <td colspan="7" rowspan="3"
-                                style="border-top:0 none white !important;word-wrap:break-word;">
+                                style="border-top:0 none white !important;word-wrap:break-word;padding:0px !important;font-size:10pt;">
                                 <t t-foreach="doc.order_line" t-as="l">
                                     <span t-field="l.product_id.name"/>
                                     <br/>
                                 </t>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;word-wrap:break-word;font-size:12t;text-align:center !important;">
+                                style="border-top:0 none white !important;word-wrap:break-word;font-size:12t;text-align:center !important;padding:0px !important;">
                                 <span t-field="doc.name"/>
                             </td>
                             <td colspan="4"
-                                style="border-top:0 none white !important;word-wrap:break-word;">
+                                style="border-top:0 none white !important;word-wrap:break-word;padding:0px !important;">
 
                             </td>
                             <td colspan="2"
-                                style="border-top:0 none white !important;word-wrap:break-word;">
+                                style="border-top:0 none white !important;word-wrap:break-word;padding:0px !important;">
 
                             </td>
                         </tr>
@@ -145,11 +145,11 @@
                         <tr>
                             <!--                            <td colspan="6"></td>-->
                             <td colspan="6" rowspan="3"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/> <!--LOT/SN-->
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                         </tr>
@@ -165,11 +165,11 @@
                         </tr>
                         <tr>
                             <td colspan="7"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                         </tr>
@@ -193,19 +193,19 @@
                         </tr>
                         <tr>
                             <td colspan="5"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                             <td colspan="2"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                         </tr>
@@ -223,15 +223,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="border-top:0 none white !important;">
+                            <td style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                             <td colspan="12"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                             <td colspan="6"
-                                style="border-top:0 none white !important;text-align:center !important;font-size:14t;">
+                                style="border-top:0 none white !important;text-align:center !important;font-size:14pt;padding:0px !important;">
                                 <t t-if="doc.partner_id.phone">
                                     <span t-field="doc.partner_id.phone"/>
                                 </t>
@@ -259,14 +259,14 @@
                                 Шир</td>
                             <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
                                 Грав</td>
-                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
+                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="2" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="3" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="3" style="border-top:0 none white !important;"><span/></td>
+                            <td style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
                             <td style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
@@ -285,16 +285,16 @@
                                 Злото, загот., г</td>
                         </tr>
                         <tr>
-                            <td style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="2" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="3" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="3" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="3" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="2" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="5" rowspan="3" style="border-top:0 none white !important;"><span/></td>
+                            <td style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="5" rowspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td colspan="9" rowspan="11" style="border-bottom:0 none white !important;vertical-align:top;padding-top:1px !important;word-wrap:break-word;">
+                            <td colspan="9" rowspan="11" style="border-bottom:0 none white !important;vertical-align:top;padding-top:1px !important;word-wrap:break-word;padding:0px !important;">
                                 <t t-foreach="doc.order_line" t-as="line">
                                     <span t-esc="line_index + 1"/> <span t-field="line.name"/>;
                                     <br/>
@@ -307,8 +307,8 @@
                                 Хв</td>
                         </tr>
                         <tr>
-                            <td colspan="3" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="2" style="border-top:0 none white !important;"><span/></td>
+                            <td colspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
                             <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
@@ -319,9 +319,9 @@
                                 Золото, виріб, г</td>
                         </tr>
                         <tr>
-                            <td colspan="3" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="2" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
+                            <td colspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
                             <td colspan="3" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">3D-Мод.</td>
@@ -329,16 +329,16 @@
                                 Хв.</td>
                         </tr>
                         <tr>
-                            <td colspan="5" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
+                            <td colspan="5" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;padding:0px !important;">
                                 Срібло, загот., г</td>
                         </tr>
                         <tr>
-                            <td colspan="5" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
+                            <td colspan="5" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
-                            <td colspan="5" style="border-top:0 none white !important;"><span/></td>
+                            <td colspan="5" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
                             <td colspan="5" style="border-bottom:0 none white !important;vertical-align:top;font-size:0.5em;padding-top:1px !important;">
@@ -347,8 +347,8 @@
                                 Срібло, виріб, г</td>
                         </tr>
                         <tr>
-                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;"><span/></td>
+                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="5" rowspan="2" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
                         </tr>
@@ -364,17 +364,17 @@
                                 Знижка</td>
                         </tr>
                         <tr>
-                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:14t;">
+                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:12pt;padding:0px !important;">
                                 <span t-field="doc.amount_total"/>
                             </td>
-                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:14t;">
+                            <td colspan="3" rowspan="3" style="border-top:0 none white !important;text-align:right !important;font-size:12pt;padding:0px !important;">
                                 <t t-set="line_amount" t-value="0"/>
                                 <t t-foreach="doc.order_line" t-as="line">
                                     <span t-esc="line.price_subtotal"/>
                                 </t>
                             </td>
-                            <td colspan="7" rowspan="3" style="border-top:0 none white !important;"><span/></td>
-                            <td colspan="6" rowspan="3" style="border-top:0 none white !important;">
+                            <td colspan="7" rowspan="3" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
+                            <td colspan="6" rowspan="3" style="border-top:0 none white !important;padding:0px !important;">
                                 <span/>
                             </td>
                         </tr>
@@ -391,7 +391,7 @@
                         </tr>
                         <tr>
                             <td colspan="9" rowspan="2"
-                                style="border-top:0 none white !important;">
+                                style="border-top:0 none white !important;padding:0px !important;">
                                 <t t-if="doc.partner_id.child_ids">
                                     <t t-set="partner_shipping_address"
                                        t-value="doc.partner_id.address_get(['delivery'])"/>
@@ -399,7 +399,7 @@
 <!--                                    <span t-field="doc.partner_id.contact_address"/>-->
                                 </t>
                             </td>
-                            <td colspan="4" rowspan="4" style="border-top:0 none white !important;"><span/></td>
+                            <td colspan="4" rowspan="4" style="border-top:0 none white !important;padding:0px !important;"><span/></td>
                         </tr>
                         <tr>
                         </tr>
@@ -408,7 +408,7 @@
                                 ПІБ</td>
                         </tr>
                         <tr>
-                            <td colspan="9" style="border-top:0 none white !important;">
+                            <td colspan="9" style="border-top:0 none white !important;padding:0px !important;">
                                 <span t-field="doc.partner_id.name"/>
                             </td>
                         </tr>
