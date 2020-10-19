@@ -8,7 +8,7 @@
 
     'category': 'Sales',
     'license': 'Other proprietary',
-    'version': '13.0.1.0.5',
+    'version': '13.0.1.0.7',
 
     'depends': [
         'base', 'sale_management', 'barcodes', 'account', 'sale_stock'
@@ -17,7 +17,6 @@
         'views/sale_order_view.xml',
         'report/order_report.xml',
         'report/order_report_template.xml',
-        'report/order_report_template_new.xml',
     ],
 
     'installable': True,
