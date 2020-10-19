@@ -72,12 +72,12 @@
                         </tr>
                         <tr>
                             <td colspan="2"
-                                style="border-top:0 none white !important;word-wrap:break-word;font-size:12pt;">
-                                <span t-field="doc.name"/>
+                                style="border-top:0 none white !important;padding:1px !important;">
+                                <span/>
                             </td>
                             <td colspan="5"
-                                style="border-top:0 none white !important;">
-                                <span/>
+                                style="border-top:0 none white !important;word-wrap:break-word;font-size:12pt;padding:1px !important;">
+                                <span t-field="doc.name"/>
                             </td>
                             <td colspan="6"
                                 style="border-top:0 none white !important;align:top !important;text-align:center !important;font-size:12pt; padding:1px !important;">
