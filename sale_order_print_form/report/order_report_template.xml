@@ -54,7 +54,14 @@
                     <tr>
                         <th class="title_sign"><u>Арт.</u>: </th>
                         <td>
-                            <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', doc.name, 600, 100)"/>
+                            <t t-foreach="doc.order_line" t-as="line">
+                                <t t-if="line.product_id.type == 'product'">
+                                    <t t-if="line.product_id.barcode">
+                                        <span t-field="line.product_id.barcode"/>
+                                    </t>
+                                </t>
+                            </t>
+<!--                            <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', doc.name, 600, 100)"/>-->
                             <br/>
                             <br/>
 <!--                            <span t-field="doc.company_id.partner_id.city"/>,-->
@@ -106,6 +113,8 @@
                         <th class="title_sign"><u>№ замовлення <br/>від клієнта (з сайта)</u>: </th>
                         <td style="font-size:14pt;">
                             <span t-field="doc.name"/>
+                            <br/>
+                            <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', doc.name, 600, 100)"/>
                             <br/>
                             <br/>
                         </td>
@@ -165,7 +174,7 @@
                     <tr>
                         <th class="title_sign"><u>Аванс</u>: </th>
                         <td style="font-size:14pt;">
-                            <span t-field="doc.amount_total"/>
+                            <span t-field="doc.so_pf_amount_prepaid"/>
                             <br/>
                             <br/>
                             <br/>
