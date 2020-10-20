@@ -83,7 +83,6 @@
                         <td style="font-size:14pt;">
                             <span t-field="doc.date_order" t-options="{'format': 'dd.mm.YYYY'}"/>
                             <br/>
-                            <br/>
                         </td>
                     </tr>
                     <tr>
@@ -95,7 +94,6 @@
                                 <span t-esc="date_done.strftime('%d.%m.%Y')"/>
                             </t>
                             <br/>
-                            <br/>
                         </td>
                     </tr>
                     <tr>
@@ -106,7 +104,6 @@
                                 <br/>
                             </t>
                             <br/>
-                            <br/>
                         </td>
                     </tr>
                     <tr>
@@ -115,7 +112,6 @@
                             <span t-field="doc.name"/>
                             <br/>
                             <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', doc.name, 600, 100)"/>
-                            <br/>
                             <br/>
                         </td>
                     </tr>
@@ -129,7 +125,6 @@
                                     </t>
                                 </t>
                             </t>
-                            <br/>
                             <br/>
                         </td>
                     </tr>
@@ -145,8 +140,6 @@
                                 </t>
                             </t>
                             <br/>
-                            <br/>
-                            <br/>
                         </td>
                     </tr>
                     <tr>
@@ -158,8 +151,6 @@
                                 <br/>
                             </t>
                             <br/>
-                            <br/>
-                            <br/>
                         </td>
                     </tr>
                     <tr>
@@ -167,16 +158,12 @@
                         <td style="font-size:14pt;">
                             <span t-field="doc.amount_total"/>
                             <br/>
-                            <br/>
-                            <br/>
                         </td>
                     </tr>
                     <tr>
                         <th class="title_sign"><u>Аванс</u>: </th>
                         <td style="font-size:14pt;">
                             <span t-field="doc.so_pf_amount_prepaid"/>
-                            <br/>
-                            <br/>
                             <br/>
                         </td>
                     </tr>
@@ -190,16 +177,12 @@
                                 <span t-field="doc.partner_id.contact_address"/>
                             </t>
                             <br/>
-                            <br/>
-                            <br/>
                         </td>
                     </tr>
                     <tr>
                         <th class="title_sign"><u>ПІБ</u>: </th>
                         <td style="font-size:14pt;">
                             <span t-field="doc.partner_id.name"/>
-                            <br/>
-                            <br/>
                             <br/>
                         </td>
                     </tr>
