@@ -218,8 +218,7 @@
                             </td>
                             <td colspan="6"
                                 style="border-top:0 none white !important;align:top !important;text-align:center !important;font-size:12pt !important; padding:1px !important;">
-                                <span t-field="doc.date_order"
-                                      t-options="{'format': 'dd.mm.YYYY'}"/>
+                                <span t-esc="doc.date_order.strftime('%d.%m.%Y')"/>
                             </td>
                             <td colspan="6"
                                 style="border-top:0 none white !important;word-wrap:break-word;font-size:12pt !important;text-align:center !important;padding:1px !important;">
@@ -258,7 +257,7 @@
                             </td>
                             <td colspan="6"
                                 style="border-top:0 none white !important;word-wrap:break-word;font-size:12t;text-align:center !important;padding:1px !important;">
-                                <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', doc.name, 600, 100)" style="max-height:70pt;max-width:100%;" align="center"/>
+                                <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('EAN8', doc.name, 600, 100)" style="max-height:70pt;max-width:100%;" align="center"/>
                                 <span t-field="doc.name"/>
                             </td>
                             <td colspan="4"
