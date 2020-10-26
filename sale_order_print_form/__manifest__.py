@@ -8,7 +8,7 @@
 
     'category': 'Sales',
     'license': 'Other proprietary',
-    'version': '13.0.1.0.17',
+    'version': '13.0.1.0.18',
 
     'depends': [
         'base', 'sale_management', 'barcodes', 'account', 'sale_stock'
