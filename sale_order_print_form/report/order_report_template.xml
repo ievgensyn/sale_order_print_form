@@ -550,7 +550,7 @@
                         </tr>
                         <tr style="height:25px;overflow:hidden;">
                             <td colspan="6" rowspan="3" style="vertical-align:top;border-top:0 none white !important;font-size:10pt !important;padding-top:1rem">
-                                <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', doc.name, 600, 150)" style="height:4rem;width:100%;align:middle;" alt="Barcode"/>
+                                <img t-if="doc.name" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', doc.name, 600, 150)" style="height:4rem;width:100%;vertical-align:top;" alt="Barcode"/>
                             </td>
                         </tr>
                         <tr style="height:15px;">
